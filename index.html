@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notepad</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simple Notepad</h1>
+    </header>
+
+    <main>
+        <section class="note-editor">
+            <input type="text" id="note-title" placeholder="Note title">
+            <textarea id="note-content" placeholder="Write your note here..."></textarea>
+            <button id="save-note">Save Note</button>
+        </section>
+
+        <section class="note-list">
+            <h2>Saved Notes</h2>
+            <input type="text" id="search-bar" placeholder="Search notes by title...">
+            <div class="file-actions">
+                <button id="download-notes">Download Notes</button>
+                <input type="file" id="upload-notes" accept=".json">
+            </div>
+            <ul id="notes"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Notepad. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
